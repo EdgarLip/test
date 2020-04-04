@@ -4,7 +4,6 @@ addBadge text: badge
 pipeline {
     agent any
     stages {
-        addBadge icon: '', id: '', link: '', text: 'sdfdsfsdfsdf'
         stage('check ping to google') {
             steps {
                 sh 'ping 8.8.8.8 -c 5'
