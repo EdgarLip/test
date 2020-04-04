@@ -1,3 +1,6 @@
+
+addBadge text: "nana-banana"
+
 pipeline {
     agent any
     stages {
