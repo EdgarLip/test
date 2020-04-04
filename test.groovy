@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('check ping to google') {
             steps {
-                sh 'ping 8.8.8.8'
+                sh 'ping 8.8.8.8 -c 5'
                 junit 'reports/**/*.xml'
             }
         }
