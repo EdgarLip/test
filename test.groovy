@@ -1,5 +1,5 @@
 badge = "nana-banana"
-addBadge text: badge
+addBadge(icon: 'completed.gif', text: badge)
 
 pipeline {
     agent any
