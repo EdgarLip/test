@@ -1,8 +1,5 @@
 pipeline {
     agent any
-//     options {
-//         skipStagesAfterUnstable()
-//     }
     stages {
         stage('check ping to google') {
             steps {
