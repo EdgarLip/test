@@ -1,5 +1,5 @@
-
-addBadge text: "nana-banana"
+badge = "nana-banana"
+addBadge text: badge
 
 pipeline {
     agent any
