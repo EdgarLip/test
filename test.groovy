@@ -1,5 +1,5 @@
 badge = "nana-banana"
-ping_dest = env.ping_dest
+ping_dest = env.PING_DEST
 
 pipeline {
     agent any
@@ -8,7 +8,7 @@ pipeline {
             steps {
                 addBadge(icon: 'yellow.gif', text: badge)
                 script {
-                    ping_dest = env.ping_dest
+                    ping_dest = env.PING_DEST
                     sh "ping ${ping_dest} -c 5"
                 }
             }
