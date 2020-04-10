@@ -7,7 +7,10 @@ pipeline {
         stage('check ping to google') {
             steps {
                 addBadge(icon: 'yellow.gif', text: badge)
-                sh 'ping' +$ping_dest+' -c 5'
+                script {
+                    ping_dest = env.ping_dest
+                    sh "ping ${ping_dest} -c 5"
+                }
             }
         }
         stage('check working dir'){
