@@ -1,5 +1,5 @@
 badge = "nana-banana"
-
+ping_dest = env.ping_dest
 
 pipeline {
     agent any
@@ -7,7 +7,7 @@ pipeline {
         stage('check ping to google') {
             steps {
                 addBadge(icon: 'yellow.gif', text: badge)
-                sh 'ping 8.8.8.8 -c 5'
+                sh 'ping' +$ping_dest+' -c 5'
             }
         }
         stage('check working dir'){
