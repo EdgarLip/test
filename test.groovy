@@ -8,8 +8,9 @@ pipeline {
             steps {
                 addBadge(icon: 'yellow.gif', text: badge)
                 script {
-                    ping_dest = env.PING_DEST
-                    sh "ping ${ping_dest} -c 5"
+                    for(int i=0; i<2 ;i++) {
+                        sh "ping ${ping_dest} -c 5"
+                    }
                 }
             }
         }
