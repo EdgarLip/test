@@ -18,6 +18,7 @@ pipeline {
         stage('run python script ') {
             steps {
                 sh 'python3 hello_world.py'
+                removeBadges()
                 addBadge(icon: 'completed.gif', text: badge)
             }
         }
