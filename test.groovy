@@ -4,7 +4,7 @@ ping_dest = env.PING_DEST
 pipeline {
     agent any
     stages {
-        stage('check ping to google') {
+        stage('check ping to google !') {
             steps {
                 addBadge(icon: 'yellow.gif', text: badge)
                 script {
