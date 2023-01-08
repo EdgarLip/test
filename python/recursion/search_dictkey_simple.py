@@ -10,7 +10,13 @@ def read_json(file_name):
         return json_data
 
 def check_if_key_exists(dict1, searched_key, current_path):
-
+    """
+    :param dict1: the dict to seach in, in this case this is a dict that includes only other dicts.
+    :param searched_key: the key to seach in the dict.
+    :param current_path: the path that i am currently located in from the dict prespective.
+    :return: None
+    :prints: print the full path once the key is found,
+    """
     if not isinstance(dict1, dict):
         return None
     if not dict1.keys():
