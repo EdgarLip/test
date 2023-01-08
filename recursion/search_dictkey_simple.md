@@ -37,7 +37,7 @@ for the code in file : search_dictkey_simple.py, reading :
 </details>
 
 ♦ if i am searching for the key : "private_vlan"
-  the resault: 
-  ->network_config->lan1->addresses->properties->private_vlan
+  the resault:                                                                               
+  ->network_config->lan1->addresses->properties->private_vlan    
   ->network_config->lan2->addresses->properties->private_vlan
 
