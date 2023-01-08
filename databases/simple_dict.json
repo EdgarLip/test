@@ -1,0 +1,27 @@
+{
+  "cpu_isolation_numa_1": "-1",
+  "network_config": {
+    "lan1": {
+      "type":"vlan",
+      "vlan_id":101,
+      "addresses": {
+        "ip": "10.10.10.1",
+        "sm": "24",
+        "properties": {
+          "private_vlan": true
+        }
+      }
+    },
+    "lan2": {
+      "type":"vlan",
+      "vlan_id":102,
+      "addresses": {
+        "ip": "10.10.10.1",
+        "sm": "24",
+        "properties": {
+          "private_vlan": true
+        }
+      }
+    }
+  }
+}
