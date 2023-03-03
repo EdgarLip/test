@@ -1,1 +1,2 @@
-# test
+# test project
+# interactive with git
